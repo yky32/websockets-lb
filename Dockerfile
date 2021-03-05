@@ -1,5 +1,4 @@
 FROM nginx:latest
-#COPY ./assets/index.html /usr/share/nginx/html/index.html
-#COPY ./assets /opt/assets
+RUN apt-get update -y &&  apt-get install vim -y
 RUN rm /etc/nginx/conf.d/default.conf
-COPY ./nginx/nginx_test.conf /etc/nginx
+COPY ./nginx/nginx_ws.conf /etc/nginx/conf.d/nginx_ws.conf
