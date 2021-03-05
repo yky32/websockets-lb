@@ -4,7 +4,7 @@ const introText = document.querySelector('.intro-text');
 const audioContext = (typeof AudioContext !== 'undefined') ? new AudioContext() : new webkitAudioContext();
 
 // Listen for data from web sockets.
-const ws = new Primus('ws://localhost:8000/primus');
+const ws = new Primus('ws://localhost:3000/primus');
 ws.on('data', (data) => {
   playAudioVisual(data.x, data.y, data.color);
 });

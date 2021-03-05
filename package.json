@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "submono": "*",
+    "express": "*",
     "ws": "*",
     "primus": "*",
     "democracy": "*"
